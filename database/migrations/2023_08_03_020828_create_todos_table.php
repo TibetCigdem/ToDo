@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
-            //$table->foreignId('users_id');
+            $table->foreignId('user_id'); //Delete it if it wont work
             $table->string('title');
             $table->text('description');
             $table->tinyInteger('status');
